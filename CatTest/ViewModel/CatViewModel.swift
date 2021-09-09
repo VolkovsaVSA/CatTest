@@ -13,8 +13,6 @@ class CatViewModel: ObservableObject {
         didSet {
             if pressButton {
                 refreshID = UUID()
-            } else {
-//                cats = cats.dropLast()
             }
         }
     }
