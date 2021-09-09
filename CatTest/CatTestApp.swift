@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct CatTestApp: App {
+    
+    let catVM = CatViewModel()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            CatView()
+                .environmentObject(catVM)
         }
     }
 }

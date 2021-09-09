@@ -8,18 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		C83BD50B26E9E6BB001FE902 /* CatTestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83BD50A26E9E6BB001FE902 /* CatTestApp.swift */; };
-		C83BD50D26E9E6BB001FE902 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83BD50C26E9E6BB001FE902 /* ContentView.swift */; };
+		C83BD50D26E9E6BB001FE902 /* CatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83BD50C26E9E6BB001FE902 /* CatView.swift */; };
 		C83BD50F26E9E6BD001FE902 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C83BD50E26E9E6BD001FE902 /* Assets.xcassets */; };
 		C83BD51226E9E6BD001FE902 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C83BD51126E9E6BD001FE902 /* Preview Assets.xcassets */; };
+		C83BD51C26EA1CBD001FE902 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83BD51B26EA1CBD001FE902 /* Settings.swift */; };
+		C83BD51E26EA1F71001FE902 /* ClearButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83BD51D26EA1F71001FE902 /* ClearButton.swift */; };
+		C83BD54026EA7C20001FE902 /* CatCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83BD53F26EA7C20001FE902 /* CatCard.swift */; };
+		C83BD54226EA801B001FE902 /* CatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83BD54126EA801B001FE902 /* CatViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C83BD50726E9E6BB001FE902 /* CatTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CatTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C83BD50A26E9E6BB001FE902 /* CatTestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatTestApp.swift; sourceTree = "<group>"; };
-		C83BD50C26E9E6BB001FE902 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C83BD50C26E9E6BB001FE902 /* CatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatView.swift; sourceTree = "<group>"; };
 		C83BD50E26E9E6BD001FE902 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C83BD51126E9E6BD001FE902 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C83BD51326E9E6BD001FE902 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C83BD51B26EA1CBD001FE902 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		C83BD51D26EA1F71001FE902 /* ClearButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClearButton.swift; sourceTree = "<group>"; };
+		C83BD53F26EA7C20001FE902 /* CatCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatCard.swift; sourceTree = "<group>"; };
+		C83BD54126EA801B001FE902 /* CatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +61,9 @@
 			isa = PBXGroup;
 			children = (
 				C83BD50A26E9E6BB001FE902 /* CatTestApp.swift */,
-				C83BD50C26E9E6BB001FE902 /* ContentView.swift */,
+				C83BD54326EA8F67001FE902 /* ViewModel */,
+				C83BD54426EA8F75001FE902 /* View */,
+				C83BD51B26EA1CBD001FE902 /* Settings.swift */,
 				C83BD50E26E9E6BD001FE902 /* Assets.xcassets */,
 				C83BD51326E9E6BD001FE902 /* Info.plist */,
 				C83BD51026E9E6BD001FE902 /* Preview Content */,
@@ -67,6 +77,24 @@
 				C83BD51126E9E6BD001FE902 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C83BD54326EA8F67001FE902 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C83BD54126EA801B001FE902 /* CatViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C83BD54426EA8F75001FE902 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C83BD50C26E9E6BB001FE902 /* CatView.swift */,
+				C83BD53F26EA7C20001FE902 /* CatCard.swift */,
+				C83BD51D26EA1F71001FE902 /* ClearButton.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +166,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C83BD50D26E9E6BB001FE902 /* ContentView.swift in Sources */,
+				C83BD50D26E9E6BB001FE902 /* CatView.swift in Sources */,
+				C83BD54026EA7C20001FE902 /* CatCard.swift in Sources */,
+				C83BD51C26EA1CBD001FE902 /* Settings.swift in Sources */,
 				C83BD50B26E9E6BB001FE902 /* CatTestApp.swift in Sources */,
+				C83BD51E26EA1F71001FE902 /* ClearButton.swift in Sources */,
+				C83BD54226EA801B001FE902 /* CatViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
